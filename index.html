@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>TSP visualizer</title>
+  <script src="rand_20.js"></script>
+  <script src="rand_1k.js"></script>
+  <script src="tech_30k.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <canvas width="500" height="500" id="canvas"></canvas><br>
+  <span>data : </span>
+  <!-- <input type="text" id="area" style="width:500px;height:100px;"> -->
+  <textarea id="area" cols="100" rows="10"></textarea>
+  <input type="button" value="reload" onclick="updateVis();"><br>
+  <input type="text" id="scale" value="0.25">
+  <input type="button" value="rescale" onclick="rescale();"><br>
+</body>
+</html>
